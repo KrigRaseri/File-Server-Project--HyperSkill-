@@ -1,12 +1,9 @@
-package file_server;
-/**
- * File server project will make a file server using socket, files, and multithreading.
- *
- * @author Krig Raser (pen name), https://github.com/KrigRaseri
- * */
+package file_client;
+
+
 public class Main {
     public static void main(String[] args) {
-        Thread t = new Thread(new FileServerMenu());
+        Thread t = new Thread(new ServerClient());
         t.start();
         synchronized (t) {
             try {
@@ -17,4 +14,3 @@ public class Main {
         }
     }
 }
-

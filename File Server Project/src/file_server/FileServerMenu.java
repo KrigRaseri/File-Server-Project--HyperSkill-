@@ -7,7 +7,8 @@ import java.io.InputStreamReader;
 public class FileServerMenu implements Runnable {
     @Override
     public void run() {
-        FileServerMenu();
+        //FileServerMenu();
+        Server.serverRun();
     }
 
     public void FileServerMenu() {
